@@ -11,7 +11,7 @@ So, where does this happen? In the chat applications. In public forums on differ
 
 What you are going to see next are my collections emotionally charged banter that have come out of me. Not becuase I carefully thought about my argument. But I just focused on the keys and keyboard in front of me. Something of an unfiltered memo of my pieces of mind that I have given to people.
 
-The essays are copy pasted vertbatim except for spelling mistakes that happend in the actual event. Things in _italics_ are the resopnses of the people who was at the victim end of my banter. I think they are sometimes important for clearing the context of what I typed next.
+The essays are copy pasted vertbatim except for spelling mistakes that happend in the actual event. Things in _italics_ are the responses of the people who was at the victim end of my banter. I think they are sometimes important for clearing the context of what I typed next.
 
 Enjoy.
 
