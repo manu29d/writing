@@ -14,3 +14,7 @@ What you are going to see next are my collections emotionally charged banter tha
 The essays are copy pasted vertbatim except for spelling mistakes that happend in the actual event. Things in _italics_ are the resopnses of the people who was at the victim end of my banter. I think they are sometimes important for clearing the context of what I typed next.
 
 Enjoy.
+
+------
+
+[self-sabotage](/writing/self-sabotage)
