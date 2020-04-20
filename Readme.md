@@ -20,3 +20,5 @@ Enjoy.
 [self-sabotage](/writing/self-sabotage)
 
 [bereavement](/writing/bereavement)
+
+[a brave new world awaits](/writing/a-brave-new-world)
