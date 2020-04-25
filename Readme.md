@@ -22,3 +22,5 @@ Enjoy.
 [bereavement](/writing/bereavement)
 
 [a brave new world awaits](/writing/a-brave-new-world)
+
+[don't be the bottleneck](/writing/bottleneck)
