@@ -117,7 +117,7 @@ But choco has more support and is the de-facto standard. I had both on my system
 
 This one's puzzling and by far the most irritating part of the whole process. What is the standard way of installing this? Is it via scoop/choco? Is it via git-for-windows? Is it via Github for Windows? Git Kraken?
 
-I tried a few alternatives and ended up with 3-4 binaries for git. All different versions and no one complained about git being already installed. Which means none of thee checked for it. Makes sense for choco and scoop. They look at specific directories. Cmder came with it's own. Github for Windows has other ideas. Kraken and Github each added an ssh key to my aacount that just felt too automatic for my control.
+I tried a few alternatives and ended up with 3-4 binaries for git. All different versions and no one complained about git being already installed. Which means none of thee checked for it. Makes sense for choco and scoop. They look at specific directories. Cmder came with it's own. Github for Windows has other ideas. Kraken and Github each added an ssh key to my account that just felt too automatic for my control.
 
 #### PostgreSQL
 
@@ -145,7 +145,7 @@ Wait. I'm on Windows Home?
 - You need to set "Disgnostics Data" to _Full_ which means max telemtry
 - Install preview builds at your own risk, because things might break
 
-### Conslusion
+### Conclusion
 
 a big **NOPE**
 
