@@ -8,7 +8,7 @@ Following are the things now are making me switch.
 
 1. Pop!_OS 20.04 raised my average CPU temperatures by about 3-5 degrees Celcius.
 2. My favourite extension Maximus 3 no longer works. (Seriously, this feature should just be built in).
-3. The cross between i3 and Gnome is a hodge-podge in my opinion and distracting (I know you can turn it off).
+3. The [new DE](https://github.com/pop-os/shell), a cross between i3 and Gnome, is a hodge-podge in my opinion and distracting (I know you can turn it off).
 
 You could argue that I have been around linux based systems long enough to know how to fix these non-issues. But I am now 30 years old and I want to get to work before worrying about how to fix my DE to my liking. I'll live with a few compromises if it makes me faster.
 Give me things on a silver plate so that I can `git clone` my work related stuff and get to work.
@@ -19,19 +19,19 @@ Don't worry. I am still using Pop!_OS 18.04 on my work laptop. I won't jeopardis
 
 ### Background
 
-I own a ThinkPad X1 Extreme Gen 1 laptop as my personal driver. I want to play the occasional games I have on Steam and hence this one has Windows. The last time I touched Windows for anything other than CS:GO was back in college for running Blender. On Windows 7. I gave up immediately as Windows 8 came out.
+I own a [ThinkPad X1 Extreme Gen 1](https://www.lenovo.com/gb/en/laptops/thinkpad/x-series/ThinkPad-X1-Extreme/p/22TP2TXX1E1) laptop as my personal driver. I want to play the occasional games I have on Steam and hence this one has Windows. The last time I touched Windows for anything other than CS:GO was back in college for running Blender. On Windows 7. I gave up immediately as Windows 8 came out.
 
 So, let's note the changes that came out since then
-1. Windows has workspaces now!!!
-2. WSL2 is around the corner
-3. Windows terminal looks promising
-4. winget-cli is coming
-5. Choco and scoop are here to manage the rest
+1. Windows has [workspaces](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/using-workspaces) now!!!
+2. [WSL2](https://docs.microsoft.com/en-us/windows/wsl/wsl2-index) is around the corner
+3. Windows [terminal](https://github.com/Microsoft/Terminal) looks promising
+4. [winget-cli](https://github.com/microsoft/winget-cli) is coming
+5. [Choco](https://chocolatey.org/) and [scoop](https://scoop.sh/) are here to manage the rest
 6. You have a proper desktop environment and don't boot into the start menu
 
 My weapons of choice that I will be validating this on
 1. Vim
-2. A tiling terminal emulator (like Tilix or iTerm2)
+2. A tiling terminal emulator (like [Tilix](https://gnunn1.github.io/tilix-web/) or [iTerm2](https://iterm2.com/))
 3. Ease of switchinng context (we'll get to that)
 
 ### Let's get started
@@ -45,7 +45,7 @@ The satisfaction of just hitting `Ctrl + Alt + T` and firing away commands is no
 
 Here are the options I tried:
 
-1. _Cmder - Good for people coming from Linux_
+1. _[Cmder](https://cmder.net/) - Good for people coming from Linux_
 
 Good alternative to CMD and PowerShell. Was designed for people who miss things as they were in their Linux system or Mac.
 
@@ -61,18 +61,18 @@ Splitting was the thing of note. You can configure it to split to `auto`. Which 
 
 Settings are pretty intuitive and easy to configure. There are shortcuts to open a new pane with a new profile (wsl, powershell, cmd). `settings.json` is located somewhere and can be accessed by `Ctrl + ,`. Hit the menu icon with an `Alt + Click` and you will be presented with the `defaults.json`. I just compared my two files side by side and went to the configuration documentation whenever I needed.
 
-3. _Terminus - Fancy looks_
+3. _[Terminus](https://eugeny.github.io/terminus/) - Fancy looks_
 
 Literally just learned about it while typing this out. Looks promising. Should give it a try. No idea what it does to my RAM or CPU. Will have to check.
 
-*Note*: I discovered `Nerd Fonts` while setting up `oh-my-psh` (there's 2 with the same name, different capitalization). I think it's a pretty smart amulgamation for people looking for developer fonts.
+*Note*: I discovered [`Nerd Fonts`](https://github.com/ryanoasis/nerd-fonts/) while setting up [`oh-my-posh`](https://github.com/JanDeDobbeleer/oh-my-posh) (there's 2 with the same name, different capitalization). I think it's a pretty smart amulgamation for people looking for developer fonts.
 *Note 2*: Everyone uses and recommends `Git bash` that comes with Github for Desktop. Tried it. Didn't suit me. I needed the splitting because I usually switch context between tests and seeing logs. I want it to be on the same screen. YMMV.
 
 #### Vim
 
-Installing `gVim` was the way to go becuase `vim` on a command line on windows is just not usable as soon as you resize your pane. I want to be able to hit one shortcut and fire away commands. Also, installing vim somehow produces 4 executables. `Vim Readonly`, `vim diff`, `gvim` and one other which I can't remember. If I am going to be using vim like this, I want to be able to hit the `Windows` key, type vim and press enter without ever having to look at that part of the screen.
+Installing [`gVim`](https://www.vim.org/download.php) was the way to go becuase `vim` on a command line on windows is just not usable as soon as you resize your pane. I want to be able to hit one shortcut and fire away commands. Also, installing vim somehow produces 4 executables. `Vim Readonly`, `vim diff`, `gvim` and one other which I can't remember. If I am going to be using vim like this, I want to be able to hit the `Win` key, type vim and press enter without ever having to look at that part of the screen.
 
-So, a facepalm and time for alternatives. `choco install neovim` and FVim to the rescue. Awesome!
+So, a facepalm and time for alternatives. `choco install neovim` and [FVim](https://github.com/yatli/fvim) to the rescue. Awesome!
 
 ...but it opens up with in the `C:\` drive as cwd. Which makes even `fzf` slow. Hmmm. Fix: Make a `dev` directory and write `cd ~/dev` at the top of your `vimrc`/`_viminfo`.
 
@@ -90,6 +90,13 @@ Most of our time as a software developer is gone in looking at function definiti
 Having things open side by side is a boon to productivity. I would like to keep that.
 
 ### Other things of note
+
+#### Music
+
+I love [`audacious`](https://audacious-media-player.org/) (Linux) and [`vox.rocks`](https://vox.rocks/) (Mac). Need something in Windows.
+[`Asoftmurmur`](https://asoftmurmur.com/) and [`Tide.fm`](https://tide.fm/en_US/) work on browsers anyway.
+
+Found [`Headset`](https://headsetapp.co/). You need a Youtube API key from your Google developer account. How did I not know this exists?
 
 #### Window snapping/tiling in Windows
 
