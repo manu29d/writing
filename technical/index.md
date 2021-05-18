@@ -14,4 +14,4 @@ Given the devices at my disposal and my eternal love for tinkering, I keep doing
 Here is my technical memory dump of my adventures:
 -------------------------------------------------
 
-[windows setup](windows_setup.md)
+[windows setup](../windows_setup.md)
