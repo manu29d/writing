@@ -17,10 +17,10 @@ Enjoy.
 
 ------
 
-[self-sabotage](/writing/self-sabotage)
+[self-sabotage](self-sabotage.md)
 
-[bereavement](/writing/bereavement)
+[bereavement](bereavement.md)
 
-[a brave new world awaits](/writing/a-brave-new-world)
+[a brave new world awaits](a-brave-new-world.md)
 
-[don't be the bottleneck](/writing/bottleneck)
+[don't be the bottleneck](bottleneck.md)
