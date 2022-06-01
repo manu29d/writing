@@ -24,3 +24,5 @@ Enjoy.
 [a brave new world awaits](a-brave-new-world.md)
 
 [don't be the bottleneck](bottleneck.md)
+
+[windows setup](windows_setup.md)
