@@ -1,0 +1,58 @@
+syntax on
+set mouse+=a
+set hlsearch cursorline incsearch nu
+set termguicolors
+set background=dark
+set expandtab tabstop=2 shiftwidth=2
+set autoindent smartindent
+set guifont=MesloLGS\ Nerd\ Font\ Mono\ 9pt
+
+call plug#begin()
+  Plug 'rakr/vim-one'
+  Plug 'vim-airline/vim-airline'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'vim-syntastic/syntastic'
+  Plug 'Quramy/tsuquyomi'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-rails'
+  Plug 'preservim/nerdtree'
+call plug#end()
+
+colorscheme one
+
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+let g:airline_theme='one'
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'ra'
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 1
+let g:syntastic_quiet_messages = { "type": "style" }
+
+autocmd FileType typescript setlocal completeopt+=menu,preview
+let g:tsuquyomi_disable_quickfix = 1
+
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:syntastic_ruby_checkers       = ['rubocop']
+
+nnoremap <Tab> :bn<CR>
+
+nnoremap <C-\> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" Start NERDTree. If a file is specified, move the cursor to its window.
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * NERDTree | if argc() > 0 || exists("s:std_in") | wincmd p | endif
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" If another buffer tries to replace NERDTree, put it in the other window, and bring back NERDTree.
+autocmd BufEnter * if bufname('#') =~ 'NERD_tree_\d\+' && bufname('%') !~ 'NERD_tree_\d\+' && winnr('$') > 1 |
+    \ let buf=bufnr() | buffer# | execute "normal! \<C-W>w" | execute 'buffer'.buf | endif
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * if getcmdwintype() == '' | silent NERDTreeMirror | endif
