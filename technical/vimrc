@@ -6,6 +6,7 @@ set background=dark
 set expandtab tabstop=2 shiftwidth=2
 set autoindent smartindent
 set guifont=MesloLGS\ Nerd\ Font\ Mono\ 9pt
+set splitright splitbelow
 
 call plug#begin()
   Plug 'rakr/vim-one'
