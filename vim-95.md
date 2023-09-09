@@ -1,4 +1,4 @@
-# Simplifying Vim: My 95% Vim Usage
+# Simplifying Vim: 95% of my Vim Usage
 
 I've been using Vim for a decade now, and over the years, I've gradually streamlined my usage to a minimalistic subset of its powerful features. While Vim can seem intimidating to newcomers, I've found that the 80-20 principle applies here as well. By focusing on a handful of essential features and a few select plugins, you can become highly productive with this amazing software. In this blog post, I'll share my minimalist Vim setup, including the plugins I use, my key combinations, and some handy commands.
 
@@ -22,19 +22,35 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 ## My Vim Configuration
 
-Here's a glimpse of my basic Vim configuration:
+Here's a glimpse of my Vim configuration:
 
 ```vim
+syntax on
 set mouse+=a
-set hlsearch
-set splitright
-set splitbelow
-set nu
-set cursorline
-set highlightline
-set autoindent
-set smartindent
-set sw=2 ts=2
+set hlsearch cursorline incsearch nu
+set termguicolors
+set background=dark
+set expandtab tabstop=2 shiftwidth=2
+set autoindent smartindent
+set splitright splitbelow
+
+call plug#begin()
+  Plug 'vim-airline/vim-airline'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'preservim/nerdtree'
+call plug#end()
+
+let g:airline_powerline_fonts = 1
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_working_path_mode = 'ra'
+
+nnoremap <C-\> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+let g:NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.swp$']
 ```
 
 ## My Minimalist Key Combinations
@@ -71,7 +87,7 @@ I've deliberately kept my Vim keybindings simple. Here are the key combinations 
 
 ## Handy Vim Commands
 
-Here are some additional Vim commands I use occasionally:
+Here are some Vim commands I use almost daily (I really don't I use much else):
 
 - **:e:** Open files outside the current folder, e.g., `:e ~/.zshrc`.
 - **:wqa:** Save all and quit Vim.
