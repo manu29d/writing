@@ -26,3 +26,5 @@ Enjoy.
 [don't be the bottleneck](bottleneck.md)
 
 [windows setup](windows_setup.md)
+
+[95% of my vim usage](vim-95.md)
